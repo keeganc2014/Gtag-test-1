@@ -1,4 +1,4 @@
-using System;
+Tusing System;
 using System.IO;
 using System.Reflection;
 using UnityEditor;
@@ -72,6 +72,7 @@ public static class BuildSetup
     static void ConfigurePlayer()
     {
         PlayerSettings.companyName = "TestStudio";
+        PlayerSettings.colorSpace = ColorSpace.Linear;
         PlayerSettings.productName = "GtagMapTest";
         PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.test.gtagmaptest");
         PlayerSettings.bundleVersion = "0.1";
